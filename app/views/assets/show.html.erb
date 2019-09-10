@@ -1,0 +1,57 @@
+<%= react_component 'Menubar' %>
+
+<br><br><br><br><br>
+
+<p id="notice"><%= notice %></p>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-info">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+
+            <p>
+              <strong>NAME</strong>
+              <%= @asset.name %>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <div class="panel panel-info">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+
+            <p>
+              <strong>DESCRIPTION</strong>
+              <%= @asset.description %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel panel-info">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+
+            <p>
+              <strong>OS:</strong>
+              <%= @asset.os %>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <%= link_to 'Edit', edit_asset_path(@asset), :class=> 'white-text waves-effect waves-light btn' %>
+  <%= link_to 'Back', assets_path, :class=> 'white-text waves-effect waves-light btn' %>
+
+<br><br>

@@ -1,0 +1,135 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+*/
+
+@import "materialize";
+@import "material_icons";
+
+.button
+{
+    color: white;
+}
+
+select
+{
+    display: block;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.ilike-blue-container
+{
+    @extend .blue, .lighten-4;
+}
+
+.header-color
+{
+    background: #F0F2F0;      
+}
+
+.pafic_box_logo{
+    height: 32%;
+    width: 32%;
+    background-image: url("logo_box_sm.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home_video {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    top: 0;
+}
+
+.header-overlay 
+{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blue;
+    z-index: 1;
+    opacity: 0.200;
+}
+
+.fullscreen-video-wrap 
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.welcome
+{
+    position: relative;
+    z-index: 1;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-size: 70px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description
+{
+    position: center;
+    z-index: 1;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-size: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.to_pafific_box
+{
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+}
+
+.waves-effect.waves-brown .waves-ripple 
+{
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+    background-color: rgba(121, 85, 72, 0.65);
+}
+
+.btn
+{
+    background-color: rgb(43, 105, 197)
+}
+
+.btn:visited
+{
+    background-color: rgb(148, 148, 148)
+}

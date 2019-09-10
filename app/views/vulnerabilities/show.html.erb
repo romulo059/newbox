@@ -1,0 +1,81 @@
+<%= react_component 'Menubar' %>
+
+<br><br><br><br><br>
+
+<p id="notice"><%= notice %></p>
+
+  <div class="row">
+    <div class="col-sm-4">
+     <div class="panel panel-info">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <p>
+              <strong>Name:</strong>
+              <%= @vulnerability.name %>
+            </p>
+          </div>
+        </div>  
+      </div> 
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel panel-info">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <p>
+                <strong>Description:</strong>
+                <%= @vulnerability.description %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">  
+      <div class="panel panel-info">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <p>
+              <strong>Criticality:</strong>
+              <%= @vulnerability.criticality %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel panel-info">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <p>
+              <strong>Solution:</strong>
+              <%= @vulnerability.solution %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <div class="panel panel-info">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <p>
+              <strong>Cvss score:</strong>
+              <%= @vulnerability.cvss_score %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <br>
+  <%= link_to 'Edit', edit_vulnerability_path(@vulnerability), :class=> 'white-text waves-effect waves-light btn' %>
+  <%= link_to 'Back', vulnerabilities_path, :class=> 'white-text waves-effect waves-light btn' %>
+
+<br><br>
