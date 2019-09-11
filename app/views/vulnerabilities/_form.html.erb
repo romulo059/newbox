@@ -23,7 +23,7 @@
 
   <div class="field">
     <b><%= form.label :criticality %></b>
-    <%= form.text_field :criticality %>
+    <%= form.select :criticality, ['Baixa', 'Média', 'Alto', 'Crítica'], {include_blank: "Select..." } %>
   </div>
 
   <div class="field">
@@ -38,7 +38,7 @@
 
   <div class="field">
     <b><%= form.label :asset %></b>
-    <%= form.select("asset_id", Asset.all.collect {|a| [a.description, a.id ]}, {include_blank: "Select..." }  )%>
+    <%= form.select("asset_id", Asset.all.collect {|a| [a.name, a.id ]}, {include_blank: "Select..." }  )%>
   </div>
 
 <br>

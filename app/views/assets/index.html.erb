@@ -34,3 +34,6 @@
 
 <%= link_to 'New Asset', new_asset_path(@asset), :class=> 'white-text waves-effect waves-light btn' %>
 
+<br><br><br><br>
+<%= pie_chart Asset.group(:name).count %>
+

@@ -16,6 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'webpacker'
 gem 'react-rails'
+gem "chartkick"
 
 gem 'jquery-rails'
 gem 'materialize-sass'

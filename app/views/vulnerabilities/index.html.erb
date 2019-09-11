@@ -14,6 +14,7 @@
       <th>Criticality</th>
       <th>Solution</th>
       <th>Cvss score</th>
+      <th>Asset</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -26,6 +27,7 @@
         <td><%= vulnerability.criticality %></td>
         <td><%= vulnerability.solution %></td>
         <td><%= vulnerability.cvss_score %></td>
+        <td><%= vulnerability.asset.name %></td>
         <td><%= link_to 'Show', vulnerability, class: 'white-text waves-effect waves-light btn-small' %></td>
         <td><%= link_to 'Edit', edit_vulnerability_path(vulnerability), class: 'white-text waves-effect waves-light btn-small' %></td>
         <td><%= link_to 'Destroy', vulnerability, method: :delete, data: { confirm: 'Are you sure?' }, class: 'white-text waves-effect waves-light btn-small' %></td>
@@ -39,3 +41,9 @@
 <div class="red-text">
 <%= link_to 'New Vulnerability', new_vulnerability_path, class: "white-text waves-effect waves-light btn" %>
 </div>
+
+
+<br><br>
+<%= pie_chart Vulnerability.group(:criticality).count %>
+
+<%= pie_chart Asset.group(:name).count %>
