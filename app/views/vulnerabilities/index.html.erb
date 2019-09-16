@@ -42,7 +42,6 @@
 <%= link_to 'New Vulnerability', new_vulnerability_path, class: "white-text waves-effect waves-light btn" %>
 </div>
 
-
 <br><br>
 <%= pie_chart Vulnerability.group(:criticality).count %>
 
