@@ -1,24 +1,52 @@
-# README
+# NewBox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Antes de tudo, caso queira ver um vídeo autoexplicativo ao invés de ler o texto abaixo, clique aqui: 
 
-Things you may want to cover:
+Primeiramente, clone o projeto NewBox do repositório, para isso, na linha de comando faça:
 
-* Ruby version
+```
+git clone https://github.com/romulo059/newbox.git
+```
 
-* System dependencies
+Após clonar, vá na pasta “Config” e abra o arquivo chamado “database.yml”.
 
-* Configuration
+Nele, você precisará configurar com as informações do seu banco de dados: 
 
-* Database creation
+```
+efault: &default
+  adapter: postgresql
+  encoding: unicode
+  username: 
+  password: 
+  host: localhost
 
-* Database initialization
+development:
+  <<: *default
+  database: postgres
+```
 
-* How to run the test suite
+Voltando para o prompt, entre na pasta “newbox” através do comando “cd”:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+cd newbox
+```
 
-* Deployment instructions
+Para certificar de que os arquivos já instalados em node_modules não foram removidos, dê o comando:
 
-* ...
+```
+yarn install --check-files
+```
+
+Após ter solocitado ao Yarn para checar os arquivos, levante o server na linha de comando:
+
+```
+rails server
+```
+
+Por padrão, o servidor é executado na porta 3000.
+
+Abra seu navegador e acesse: http://localhost:3000/
+
+Pronto! Você verá o CRUD que criamos.
+
+Para entender mais sobre o projeto, veja o vídeo: https://youtu.be/YLRgCBQEvHs
