@@ -1,6 +1,6 @@
 # NewBox
 
-Antes de tudo, caso queira ver um vídeo autoexplicativo ao invés de ler o texto abaixo, clique aqui: 
+Antes de tudo, caso queira ver um vídeo autoexplicativo ao invés de ler o texto abaixo, clique aqui: https://youtu.be/2164wqSNKSU
 
 Primeiramente, clone o projeto NewBox do repositório, para isso, na linha de comando faça:
 
@@ -24,6 +24,7 @@ development:
   <<: *default
   database: postgres
 ```
+No nosso caso, estamos utilizando o banco de dados PostgreSQL.
 
 Voltando para o prompt, entre na pasta “newbox” através do comando “cd”:
 
