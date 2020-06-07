@@ -50,4 +50,4 @@ Abra seu navegador e acesse: http://localhost:3000/
 
 Pronto! Você verá o CRUD que criamos.
 
-Para entender mais sobre o projeto, veja o vídeo: https://youtu.be/YLRgCBQEvHs
+Para entender mais sobre o projeto, veja o vídeo: https://youtu.be/1jyk8hTbmuU
