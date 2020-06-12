@@ -1,5 +1,13 @@
 # NewBox
 
+### Links do Trabalho
+
+VÍDEO: https://youtu.be/1nbLfQadTaA
+
+ARTIGO E SLIDE: https://drive.google.com/drive/folders/1uc0Q_-pn4zf2iNWLzMYcd-sMCLypR8N6?usp=sharing
+
+## CRUD
+
 Antes de tudo, caso queira ver um vídeo autoexplicativo ao invés de ler o texto abaixo, clique aqui: https://youtu.be/2164wqSNKSU
 
 Primeiramente, clone o projeto NewBox do repositório, para isso, na linha de comando faça:
